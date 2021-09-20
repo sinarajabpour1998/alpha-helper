@@ -1,0 +1,20 @@
+<?php
+
+namespace Sinarajabpour1998\AlphaHelper\Facades;
+
+/**
+ * Class AlphaHelper
+ * @method static int integerToken(int $length = 5)
+ * @method static string stringToken(int $length = 16, string $characters = '2345679acdefghjkmnpqrstuvwxyz')
+ * @method static int digitsToEastern(int|string $number)
+ * @method static int easternToDigits(int|string $number)
+ * @method static string isActive(string|array $key, string $activeClassName = 'active')
+ * @method static string prepareMetaDescription(string $input)
+ *
+ * @see \Sinarajabpour1998\AlphaHelper\Helpers\Helper
+ */
+
+class AlphaHelper extends BaseFacade
+{
+    //
+}

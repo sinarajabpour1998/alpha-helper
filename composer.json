@@ -1,0 +1,56 @@
+{
+  "name": "sinarajabpour1998/alpha-helper",
+  "description": "Provides helper functions and validators in laravel.",
+  "keywords": [
+    "laravel",
+    "helpers",
+    "functions",
+    "laravel-helpers",
+    "laravel7-package",
+    "laravel8-package",
+    "PHP",
+    "laravel7",
+    "laravel8",
+    "national",
+    "code",
+    "melli",
+    "iban",
+    "sheba",
+    "validation",
+    "company",
+    "shenase-melli",
+    "debit",
+    "national-id",
+    "category"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sinarajabpour1998/alpha-helper",
+  "authors": [
+    {
+      "name": "Sina Rajabpour",
+      "email": "sina.rajabpour@outlook.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3|8.*",
+    "laravel/framework": "7.*|8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sinarajabpour1998\\AlphaHelper\\": "src/"
+    },
+    "files": [
+      "src/Helpers/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sinarajabpour1998\\AlphaHelper\\AlphaHelperServiceProvider"
+      ],
+      "aliases": {
+        "AlphaHelper" : "Sinarajabpour1998\\AlphaHelper\\Facades\\AlphaHelper"
+      }
+    }
+  }
+}
