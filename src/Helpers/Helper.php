@@ -116,6 +116,6 @@ class Helper
 
     public function hashMobile($stringMobile)
     {
-        return base64_encode(hash('sha512', $stringMobile, true));
+        return hash('sha512', $stringMobile);
     }
 }
