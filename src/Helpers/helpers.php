@@ -38,3 +38,15 @@ function prepareSlug($slug, $title, $model) {
 function prepareMetaDescription($input) {
     return AlphaHelper::prepareMetaDescription($input);
 }
+
+function encryptString($stringData) {
+    return AlphaHelper::encryptString($stringData);
+}
+
+function decryptString($encryptedString) {
+    return AlphaHelper::decryptString($encryptedString);
+}
+
+function hashMobile($stringMobile) {
+    return AlphaHelper::hashMobile($stringMobile);
+}

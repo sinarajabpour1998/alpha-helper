@@ -2,6 +2,9 @@
 
 namespace Sinarajabpour1998\AlphaHelper\Helpers;
 
+use Illuminate\Contracts\Encryption\DecryptException;
+use Illuminate\Contracts\Encryption\EncryptException;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Route;
 
 class Helper
@@ -89,5 +92,30 @@ class Helper
         $trimString = trim($stripString);
         $result = mb_strimwidth($trimString, 0, 160);
         return $result;
+    }
+
+    public function encryptString($stringData)
+    {
+        try {
+            $encrypted = Crypt::encryptString($stringData);
+        } catch (EncryptException $e) {
+            return 'Error in encryption: ' . $e;
+        }
+        return $encrypted;
+    }
+
+    public function decryptString($encryptedString)
+    {
+        try {
+            $decrypted = Crypt::decryptString($encryptedString);
+        } catch (DecryptException $e) {
+            return 'Error in decryption: ' . $e;
+        }
+        return $decrypted;
+    }
+
+    public function hashMobile($stringMobile)
+    {
+        return base64_encode(hash('sha512', $stringMobile, true));
     }
 }

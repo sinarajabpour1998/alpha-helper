@@ -55,6 +55,12 @@ php artisan vendor:publish --tag=alpha-helper
 
 7. prepareSlug(slug, title, model) : generate clean slug from title and checks slug unique in specific model
 
+8. encryptString(string data) : encrypts data using Crypt and returns encrypted data
+
+9. decryptString(string encryptedString) : decrypts data using Crypt and returns decrypted data
+
+10. hashMobile(string mobile) : make hash using sha512 from mobile string
+
 ..
 ```
 #### Helper Functions Usage

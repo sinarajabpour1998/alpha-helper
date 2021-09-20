@@ -10,6 +10,9 @@ namespace Sinarajabpour1998\AlphaHelper\Facades;
  * @method static int easternToDigits(int|string $number)
  * @method static string isActive(string|array $key, string $activeClassName = 'active')
  * @method static string prepareMetaDescription(string $input)
+ * @method static string encryptString(string $stringData)
+ * @method static string decryptString(string $encryptedString)
+ * @method static string hashMobile(string $stringMobile)
  *
  * @see \Sinarajabpour1998\AlphaHelper\Helpers\Helper
  */
