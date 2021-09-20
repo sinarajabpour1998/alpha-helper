@@ -12,7 +12,7 @@ namespace Sinarajabpour1998\AlphaHelper\Facades;
  * @method static string prepareMetaDescription(string $input)
  * @method static string encryptString(string $stringData)
  * @method static string decryptString(string $encryptedString)
- * @method static string hashMobile(string $stringMobile)
+ * @method static string makeHash(string $string)
  *
  * @see \Sinarajabpour1998\AlphaHelper\Helpers\Helper
  */

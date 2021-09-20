@@ -59,7 +59,7 @@ php artisan vendor:publish --tag=alpha-helper
 
 9. decryptString(string encryptedString) : decrypts data using Crypt and returns decrypted data
 
-10. hashMobile(string mobile) : make hash using sha512 from mobile string
+10. makeHash(string) : make hash using sha512 from string
 
 ..
 ```

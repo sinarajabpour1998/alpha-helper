@@ -47,6 +47,6 @@ function decryptString($encryptedString) {
     return AlphaHelper::decryptString($encryptedString);
 }
 
-function hashMobile($stringMobile) {
-    return AlphaHelper::hashMobile($stringMobile);
+function makeHash($string) {
+    return AlphaHelper::makeHash($string);
 }

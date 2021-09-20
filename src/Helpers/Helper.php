@@ -114,8 +114,8 @@ class Helper
         return $decrypted;
     }
 
-    public function hashMobile($stringMobile)
+    public function makeHash($string)
     {
-        return hash('sha512', $stringMobile);
+        return hash('sha512', $string);
     }
 }
