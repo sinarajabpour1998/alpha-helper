@@ -74,6 +74,9 @@ AlphaHelper::easternToDigits(number: ۱۳۷۵);
 AlphaHelper::isActive(key: ['posts.index', 'posts.create', 'posts.edit'], activeClassName: 'acive');
 AlphaHelper::prepareInteger(input: string or integer);
 AlphaHelper::prepareSlug(slug, title, model);
+AlphaHelper::encryptString(data [string type]);
+AlphaHelper::decryptString(data [string type]);
+AlphaHelper::makeHash(data [string type]);
 
 
 ## Call a helper function:
@@ -85,6 +88,9 @@ easternToDigits(number: ۱۲۳۴۵);
 isActive(key: ['posts.index', 'posts.create', 'posts.edit'], activeClassName: 'acive');
 prepareInteger(input: string or integer);
 prepareSlug(slug, title, model);
+encryptString(data [string type]);
+decryptString(data [string type]);
+makeHash(data [string type]);
 
 ```
 
