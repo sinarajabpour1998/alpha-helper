@@ -99,7 +99,7 @@ class Helper
         try {
             $encrypted = Crypt::encryptString($stringData);
         } catch (EncryptException $e) {
-            return 'Error in encryption: ' . $e;
+            return 'Error in encryption';
         }
         return $encrypted;
     }
@@ -109,7 +109,7 @@ class Helper
         try {
             $decrypted = Crypt::decryptString($encryptedString);
         } catch (DecryptException $e) {
-            return 'Error in decryption: ' . $e;
+            return 'Error in decryption';
         }
         return $decrypted;
     }
