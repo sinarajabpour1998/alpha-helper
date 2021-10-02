@@ -13,6 +13,7 @@ namespace Sinarajabpour1998\AlphaHelper\Facades;
  * @method static string encryptString(string $stringData)
  * @method static string decryptString(string $encryptedString)
  * @method static string makeHash(string $string)
+ * @method static string getSettingsKey(string $key)
  *
  * @see \Sinarajabpour1998\AlphaHelper\Helpers\Helper
  */

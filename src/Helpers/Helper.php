@@ -2,6 +2,7 @@
 
 namespace Sinarajabpour1998\AlphaHelper\Helpers;
 
+use App\Models\Settings;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Facades\Crypt;
@@ -117,5 +118,23 @@ class Helper
     public function makeHash($string)
     {
         return hash('sha512', $string);
+    }
+
+    public function getSettingsKey($key)
+    {
+        try {
+            $settings = new Settings();
+            $model = $settings->getKeyModel($key);
+            if(is_null($model)){
+                return Settings::query()->create([
+                    'key' => $key,
+                    'value' => null
+                ]);
+            }else{
+                return $model->value;
+            }
+        }catch (\Exception $e){
+            return $e;
+        }
     }
 }

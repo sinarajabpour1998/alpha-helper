@@ -50,3 +50,7 @@ function decryptString($encryptedString) {
 function makeHash($string) {
     return AlphaHelper::makeHash($string);
 }
+
+function getSettingsKey($key) {
+    return AlphaHelper::getSettingsKey($key);
+}

@@ -61,6 +61,8 @@ php artisan vendor:publish --tag=alpha-helper
 
 10. makeHash(string) : make hash using sha512 from string
 
+11. getSettingsKey(string key) : get settings specific key, returns a value, you must have a settings model with key-value structure
+
 ..
 ```
 #### Helper Functions Usage
@@ -77,6 +79,7 @@ AlphaHelper::prepareSlug(slug, title, model);
 AlphaHelper::encryptString(data [string type]);
 AlphaHelper::decryptString(data [string type]);
 AlphaHelper::makeHash(data [string type]);
+AlphaHelper::getSettingsKey(key [string type]);
 
 
 ## Call a helper function:
