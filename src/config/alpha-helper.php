@@ -12,4 +12,7 @@ return [
     'unique_dynamic'  => 'فیلد مورد نظر تکراری می‌باشد.',
     'persian_alphabetic'  => 'فقط الفبای فارسی مجاز می‌باشد.',
     'persian_number'  => 'فقط اعداد فارسی مجاز می‌باشد.',
+
+    // model config
+    'settings_model' => \Modules\Core\Models\Settings::class
 ];

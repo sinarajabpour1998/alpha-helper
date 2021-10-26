@@ -2,7 +2,6 @@
 
 namespace Sinarajabpour1998\AlphaHelper\Helpers;
 
-use App\Models\Settings;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Facades\Crypt;
@@ -123,7 +122,8 @@ class Helper
     public function getSettingsKey($key)
     {
         try {
-            $settings = new Settings();
+            $class = config('alpha-helper.settings_model');
+            $settings = new $class;
             $model = $settings->getKeyModel($key);
             if(is_null($model)){
                 return Settings::query()->create([
