@@ -108,6 +108,7 @@ makeHash(data [string type]);
 - Unique Dynamic (تشخیص یکتایی دو ستونه)
 - Persian Alphabetic (الفبای فارسی)
 - Persian Number (اعداد فارسی)
+- No Special Chars (بدون کاراکتر خاص)
 
 #### Validators Usage
 
@@ -384,6 +385,25 @@ return [
 
 $validatedData = $request->validate([
     'code' => 'persian_number',
+]);
+```
+
+> no_special_chars
+```
+return [
+    'name' => 'required|no_special_chars'
+];
+
+--OR--
+
+return [
+    'name' => ['required, 'no_special_chars']
+];
+
+--OR--
+
+$validatedData = $request->validate([
+    'name' => 'no_special_chars',
 ]);
 ```
 

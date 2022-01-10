@@ -350,3 +350,13 @@ Validator::extend('persian_number', function ($attribute, $character, $parameter
 
     return $status;
 }, config('alpha-helper.persian_number'));
+
+Validator::extend('no_special_chars', function ($attribute, $character, $parameters, $validator) {
+    $pattern = preg_quote('#$%^&*()+=-[]\';,./{}|\":<>?~', '#');
+    $status = preg_match("#[{$pattern}]#", $character);
+    if ($status == 1) {
+        return false;
+    }else {
+        return true;
+    }
+}, config('alpha-helper.no_special_chars'));
