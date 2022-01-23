@@ -109,6 +109,7 @@ makeHash(data [string type]);
 - Persian Alphabetic (الفبای فارسی)
 - Persian Number (اعداد فارسی)
 - No Special Chars (بدون کاراکتر خاص)
+- Address (آدرس)
 
 #### Validators Usage
 
@@ -404,6 +405,25 @@ return [
 
 $validatedData = $request->validate([
     'name' => 'no_special_chars',
+]);
+```
+
+> address
+```
+return [
+    'address' => 'required|address'
+];
+
+--OR--
+
+return [
+    'address' => ['required, 'address']
+];
+
+--OR--
+
+$validatedData = $request->validate([
+    'address' => 'address',
 ]);
 ```
 
