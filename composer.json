@@ -8,9 +8,13 @@
     "laravel-helpers",
     "laravel7-package",
     "laravel8-package",
+	"laravel9-package",
+	"laravel10-package",
     "PHP",
     "laravel7",
     "laravel8",
+	"laravel9",
+	"laravel10",
     "national",
     "code",
     "melli",
@@ -33,7 +37,7 @@
   ],
   "require": {
     "php": "^7.1.3|8.*",
-    "laravel/framework": "7.*|8.*"
+  "laravel/framework": "7.*|8.*|9.*|10.*"
   },
   "autoload": {
     "psr-4": {
