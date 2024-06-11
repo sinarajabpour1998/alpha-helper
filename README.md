@@ -63,6 +63,8 @@ php artisan vendor:publish --tag=alpha-helper
 
 11. getSettingsKey(string key) : get settings specific key, returns a value, you must have a settings model with key-value structure
 
+12. isMobile(string) : check if string is a valid mobile number
+
 ..
 ```
 #### Helper Functions Usage
@@ -80,6 +82,7 @@ AlphaHelper::encryptString(data [string type]);
 AlphaHelper::decryptString(data [string type]);
 AlphaHelper::makeHash(data [string type]);
 AlphaHelper::getSettingsKey(key [string type]);
+AlphaHelper::isMobile(string);
 
 
 ## Call a helper function:
@@ -94,6 +97,8 @@ prepareSlug(slug, title, model);
 encryptString(data [string type]);
 decryptString(data [string type]);
 makeHash(data [string type]);
+getSettingsKey(string key);
+isMobile(string);
 
 ```
 

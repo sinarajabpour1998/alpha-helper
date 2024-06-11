@@ -54,3 +54,7 @@ function makeHash($string) {
 function getSettingsKey($key) {
     return AlphaHelper::getSettingsKey($key);
 }
+
+function isMobile($string) {
+    return AlphaHelper::isMobile($string);
+}

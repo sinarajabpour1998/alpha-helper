@@ -137,4 +137,9 @@ class Helper
             return $e;
         }
     }
+
+    public function isMobile($string)
+    {
+        return (bool)preg_match("/^09\d{9}$/", $string);
+    }
 }

@@ -14,6 +14,7 @@ namespace Sinarajabpour1998\AlphaHelper\Facades;
  * @method static string decryptString(string $encryptedString)
  * @method static string makeHash(string $string)
  * @method static string getSettingsKey(string $key)
+ * @method static string isMobile(string $string)
  *
  * @see \Sinarajabpour1998\AlphaHelper\Helpers\Helper
  */
